@@ -31,7 +31,7 @@ jobs:
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_TOKEN: 47b9ca3424fb53b07a8269414c1f7748372d402c
         run: |
           ./gradlew test
           ./gradlew build sonarqube --info
