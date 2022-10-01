@@ -20,17 +20,14 @@ Branch Coverage is a white box testing method in which every outcome from a code
 
 For example, if the outcomes are binary, you need to test both True and False outcomes.
 
-The formula to calculate Branch Coverage:
+I found a formula to calculate Branch Coverage by research-number of executed branches divided by total number of branches is equal to Branch coverage.
 
-![Formula](https://cdn.guru99.com/images/1/102518_1122_CodeCoverag13.jpg)
-
-
-### Advantages of Branch coverage:
+### What are the advantages of Branch coverage:
 
 Branch coverage Testing offers the following advantages:
 
-* Allows you to validate-all the branches in the code
-* Helps you to ensure that no branched lead to any abnormality of the program’s operation
+* It helps us to validate-all the branches in the code
+* Assist  to ensure that no branched lead to any abnormality of the program’s operation
 * Branch coverage method removes issues which happen because of statement coverage testing
 * Allows you to find those areas which are not tested by other testing methods
 * It allows you to find a quantitative measure of code coverage
