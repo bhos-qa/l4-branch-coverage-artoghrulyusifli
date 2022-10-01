@@ -3,7 +3,7 @@ plugins {
     id "org.sonarqube" version "3.4.0.2513"
 }
 
-group 'org.example'
+group 'my_classroom'
 version '1.0-SNAPSHOT'
 
 repositories {
