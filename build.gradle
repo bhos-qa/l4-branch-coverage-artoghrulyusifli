@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id "org.sonarqube" version "3.4.0.2513"
-    id 'jacoco'
 }
 
 group 'org.example'
@@ -20,18 +19,6 @@ test {
     useJUnitPlatform()
 }
 
-jacoco {
-    toolVersion = "0.8.8"
-    reportsDirectory = file("build/reports/jacoco")
-}
-
-jacocoTestReport {
-    reports {
-        xml.required = true
-        csv.required = false
-    }
-}
-
 sonarqube {
     properties {
         property "sonar.projectKey", "l4-branch-coverage-artoghrulyusifli"
@@ -39,8 +26,6 @@ sonarqube {
         property "sonar.projectName", "l4-branch-coverage-artoghrulyusifli"
         property "sonar.host.url", "https://sonarcloud.io"
         property "sonar.scm.forceReloadAll", "true"
-        property "sonar.java.coveragePlugin", "jacoco"
-        property "sonar.jacoco.reportPath", "build/jacoco/test.exec"
         property "sonar.junit.reportsPath", "build/test-results/test"
         property "sonar.java.checkstyle.reportPaths", "build/reports/checkstyle/main.xml"
         property "sonar.qualitygate.wait", true
